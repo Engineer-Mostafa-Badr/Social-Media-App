@@ -1,0 +1,41 @@
+{
+  "login": "Login",
+  "email": "Email",
+  "password": "Password",
+  "notHaveAccount": "Not have account !",
+  "signUp": "SignUp",
+  "emty": "{value} can not be empty",
+  "@emty": {
+    "description": " Error message when the field is empty",
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "البريد الالكتروني"
+      }
+    }
+  },
+  "emailFormat": "Email format is not correct",
+  "passwordFormat": "Password must contain uppercase, lowercase, number and special character.",
+  "noInternetAccess": "No internet connection",
+  "notUserFoundFirebase": "No user found with this email.",
+  "errorPasswordFirebase": "Wrong password provided for that user.",
+  "errorFirebase": "An error occurred , please try again later.",
+  "noDataExist": "No data exists for the requested document.",
+  "ok": "Ok",
+  "male": "Male",
+  "female": "Female",
+  "emailIsExist": "The account already exists for that email.",
+  "addPost": "Add post ...",
+  "viewProfile": "View profile",
+  "lang": "Language",
+  "theme": "Theme",
+  "signOut": "sign out",
+  "addNewPost": "Add new post",
+  "post": "post",
+  "cancel": "Cancel",
+  "comment": "Comment",
+  "commentHint": "Add new comment ...",
+  "noImage": "No image",
+  "typingMassage": "Typing massage",
+  "send": "Send"
+}
