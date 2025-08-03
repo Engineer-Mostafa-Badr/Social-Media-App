@@ -116,23 +116,47 @@ abstract class AppLocalizations {
   /// **'Password'**
   String get password;
 
+  /// No description provided for @name.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get name;
+
+  /// No description provided for @gender.
+  ///
+  /// In en, this message translates to:
+  /// **'Gender'**
+  String get gender;
+
+  /// No description provided for @birthDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Birth Day'**
+  String get birthDay;
+
   /// No description provided for @notHaveAccount.
   ///
   /// In en, this message translates to:
-  /// **'Not have account !'**
+  /// **'Not have account ! '**
   String get notHaveAccount;
+
+  /// No description provided for @haveAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Have account ! '**
+  String get haveAccount;
 
   /// No description provided for @signUp.
   ///
   /// In en, this message translates to:
-  /// **'SignUp'**
+  /// **'Sign Up'**
   String get signUp;
 
-  ///  Error message when the field is empty
+  /// Empty value validate
   ///
   /// In en, this message translates to:
   /// **'{value} can not be empty'**
-  String emty(String value);
+  String empty(String value);
 
   /// No description provided for @emailFormat.
   ///
@@ -143,7 +167,7 @@ abstract class AppLocalizations {
   /// No description provided for @passwordFormat.
   ///
   /// In en, this message translates to:
-  /// **'Password must contain uppercase, lowercase, number and special character.'**
+  /// **'Password must be contains upper latter character and lower latter character and spacial character and numbers and must be at least 8 digits.'**
   String get passwordFormat;
 
   /// No description provided for @noInternetAccess.
@@ -155,7 +179,7 @@ abstract class AppLocalizations {
   /// No description provided for @notUserFoundFirebase.
   ///
   /// In en, this message translates to:
-  /// **'No user found with this email.'**
+  /// **'No user found for that email or password not correct.'**
   String get notUserFoundFirebase;
 
   /// No description provided for @errorPasswordFirebase.

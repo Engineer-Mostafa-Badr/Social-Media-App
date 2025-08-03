@@ -2,23 +2,27 @@
   "login": "تسجيل الدخول",
   "email": "البريد الالكتروني",
   "password": "كلمه السر",
+  "name": "الإسم",
+  "gender": "الجنس",
+  "birthDay": "تاريخ الميلاد",
   "notHaveAccount": "لا يوجد لديك حساب ! ",
+  "haveAccount": " يوجد لديك حساب ! ",
   "signUp": "إنشاء حساب",
-  "emty": "{value} لا يمكن ان يكون فارغ",
-  "@emty": {
-    "description": " Error message when the field is empty",
+  "empty": "{value} لا يمكن أن يكون فارغ",
+  "@empty": {
+    "description": "Empty value validate",
     "placeholders": {
       "value": {
         "type": "String",
-        "example": "البريد الالكتروني"
+        "example": "Bob"
       }
     }
   },
-  "emailFormat": "البريد الالكتروني غير صحيح",
-  "passwordFormat": "كلمه السر يجب ان تحتوي على حروف كبيرة وصغيرة ورقم ورمز خاص",
-  "noInternetAccess": "لا يوجد اتصال بالانترنت",
-  "notUserFoundFirebase": "لا يوجد مستخدم مرتبط بهذا البريد الالكتروني.",
-  "errorPasswordFirebase": "كلمه السر خاطئه لهذا المستخدم.",
+  "emailFormat": "البريد الالكتروني غير موجود.",
+  "passwordFormat": "كلمة السر يجب أن تحتوي على حرف كبير وحرف صغير ورمز وأرقام وأن لا يقل طولها عن ٨ خانات.",
+  "noInternetAccess": "لا يوجد اتصال بالانترنت.",
+  "notUserFoundFirebase": "لا يوجد حساب لهذا البريد الإلكتروني أو كلمة السر غير صحيحة.",
+  "errorPasswordFirebase": "خطأ في كلمة السر.",
   "errorFirebase": "حدث خطأ ما ، يرجى المحاولة مرة أخرى لاحقًا.",
   "noDataExist": "لا توجد بيانات للوثيقة المطلوبة.",
   "ok": "حسنا",

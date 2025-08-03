@@ -2,22 +2,26 @@
   "login": "Login",
   "email": "Email",
   "password": "Password",
-  "notHaveAccount": "Not have account !",
-  "signUp": "SignUp",
-  "emty": "{value} can not be empty",
-  "@emty": {
-    "description": " Error message when the field is empty",
+  "name": "Name",
+  "gender": "Gender",
+  "birthDay": "Birth Day",
+  "notHaveAccount": "Not have account ! ",
+  "haveAccount": "Have account ! ",
+  "signUp": "Sign Up",
+  "empty": "{value} can not be empty",
+  "@empty": {
+    "description": "Empty value validate",
     "placeholders": {
       "value": {
         "type": "String",
-        "example": "البريد الالكتروني"
+        "example": "Bob"
       }
     }
   },
   "emailFormat": "Email format is not correct",
-  "passwordFormat": "Password must contain uppercase, lowercase, number and special character.",
+  "passwordFormat": "Password must be contains upper latter character and lower latter character and spacial character and numbers and must be at least 8 digits.",
   "noInternetAccess": "No internet connection",
-  "notUserFoundFirebase": "No user found with this email.",
+  "notUserFoundFirebase": "No user found for that email or password not correct.",
   "errorPasswordFirebase": "Wrong password provided for that user.",
   "errorFirebase": "An error occurred , please try again later.",
   "noDataExist": "No data exists for the requested document.",

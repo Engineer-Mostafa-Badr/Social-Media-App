@@ -18,13 +18,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get password => 'Password';
 
   @override
-  String get notHaveAccount => 'Not have account !';
+  String get name => 'Name';
 
   @override
-  String get signUp => 'SignUp';
+  String get gender => 'Gender';
 
   @override
-  String emty(String value) {
+  String get birthDay => 'Birth Day';
+
+  @override
+  String get notHaveAccount => 'Not have account ! ';
+
+  @override
+  String get haveAccount => 'Have account ! ';
+
+  @override
+  String get signUp => 'Sign Up';
+
+  @override
+  String empty(String value) {
     return '$value can not be empty';
   }
 
@@ -33,13 +45,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get passwordFormat =>
-      'Password must contain uppercase, lowercase, number and special character.';
+      'Password must be contains upper latter character and lower latter character and spacial character and numbers and must be at least 8 digits.';
 
   @override
   String get noInternetAccess => 'No internet connection';
 
   @override
-  String get notUserFoundFirebase => 'No user found with this email.';
+  String get notUserFoundFirebase =>
+      'No user found for that email or password not correct.';
 
   @override
   String get errorPasswordFirebase => 'Wrong password provided for that user.';

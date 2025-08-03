@@ -10,7 +10,7 @@ mixin RegistrationValidate {
       r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+",
     );
     if (email?.isEmpty ?? true) {
-      return context.lang.emty(context.lang.email);
+      return context.lang.empty(context.lang.email);
     } else if (!expEmail.hasMatch(email!)) {
       return context.lang.emailFormat;
     } else {
@@ -24,7 +24,7 @@ mixin RegistrationValidate {
     required String textFelidName,
   }) {
     if (value?.isEmpty ?? true) {
-      return context.lang.emty(textFelidName);
+      return context.lang.empty(textFelidName);
     }
     return null;
   }
@@ -37,7 +37,7 @@ mixin RegistrationValidate {
         r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$';
     RegExp regExpPassword = RegExp(pattern);
     if (password?.isEmpty ?? true) {
-      return context.lang.emty(context.lang.password);
+      return context.lang.empty(context.lang.password);
     } else if (!regExpPassword.hasMatch(password!)) {
       return context.lang.passwordFormat;
     } else {

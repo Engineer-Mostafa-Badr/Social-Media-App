@@ -18,32 +18,44 @@ class AppLocalizationsAr extends AppLocalizations {
   String get password => 'كلمه السر';
 
   @override
+  String get name => 'الإسم';
+
+  @override
+  String get gender => 'الجنس';
+
+  @override
+  String get birthDay => 'تاريخ الميلاد';
+
+  @override
   String get notHaveAccount => 'لا يوجد لديك حساب ! ';
+
+  @override
+  String get haveAccount => ' يوجد لديك حساب ! ';
 
   @override
   String get signUp => 'إنشاء حساب';
 
   @override
-  String emty(String value) {
-    return '$value لا يمكن ان يكون فارغ';
+  String empty(String value) {
+    return '$value لا يمكن أن يكون فارغ';
   }
 
   @override
-  String get emailFormat => 'البريد الالكتروني غير صحيح';
+  String get emailFormat => 'البريد الالكتروني غير موجود.';
 
   @override
   String get passwordFormat =>
-      'كلمه السر يجب ان تحتوي على حروف كبيرة وصغيرة ورقم ورمز خاص';
+      'كلمة السر يجب أن تحتوي على حرف كبير وحرف صغير ورمز وأرقام وأن لا يقل طولها عن ٨ خانات.';
 
   @override
-  String get noInternetAccess => 'لا يوجد اتصال بالانترنت';
+  String get noInternetAccess => 'لا يوجد اتصال بالانترنت.';
 
   @override
   String get notUserFoundFirebase =>
-      'لا يوجد مستخدم مرتبط بهذا البريد الالكتروني.';
+      'لا يوجد حساب لهذا البريد الإلكتروني أو كلمة السر غير صحيحة.';
 
   @override
-  String get errorPasswordFirebase => 'كلمه السر خاطئه لهذا المستخدم.';
+  String get errorPasswordFirebase => 'خطأ في كلمة السر.';
 
   @override
   String get errorFirebase => 'حدث خطأ ما ، يرجى المحاولة مرة أخرى لاحقًا.';
