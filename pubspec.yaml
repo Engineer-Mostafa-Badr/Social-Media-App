@@ -57,6 +57,7 @@ dependencies:
   connectivity_plus: ^6.1.4
   # file picker
   file_picker: ^10.2.1
+  image_picker: ^1.1.2
   # switcher
   slide_switcher: ^1.1.2
   day_night_switcher:

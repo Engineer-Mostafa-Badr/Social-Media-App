@@ -4,6 +4,7 @@ class ProfileState extends Equatable {
   const ProfileState({
     required this.isCurrentUserProfile,
     required this.userApp,
+    this.localImage,
     this.dialogsType = DialogsType.init,
     this.errorMassage = '',
     required this.nameController,
@@ -15,8 +16,10 @@ class ProfileState extends Equatable {
   final String errorMassage;
   final TextEditingController nameController;
   final bool isShowEditName;
+  final File? localImage;
 
   ProfileState copyWith({
+    File? localImage,
     bool? isCurrentUserProfile,
     UserApp? userApp,
     DialogsType? dialogsType,
@@ -30,6 +33,7 @@ class ProfileState extends Equatable {
     errorMassage: errorMassage ?? this.errorMassage,
     nameController: nameController ?? this.nameController,
     isShowEditName: isShowEditName ?? this.isShowEditName,
+    localImage: localImage ?? this.localImage,
   );
 
   @override
@@ -40,5 +44,6 @@ class ProfileState extends Equatable {
     errorMassage,
     nameController,
     isShowEditName,
+    if (localImage != null) localImage!,
   ];
 }

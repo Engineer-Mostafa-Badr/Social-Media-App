@@ -14,8 +14,8 @@ import 'package:flutter/material.dart';
 import 'bloc/add_new_post_cubit.dart';
 import 'dart:io';
 
-part 'widget/image_post.dart';
 part 'widget/post_content.dart';
+part 'widget/image_post.dart';
 
 class AddPost extends StatelessWidget {
   const AddPost({super.key, required this.postsCubit, this.postEdit});
@@ -49,7 +49,6 @@ class AddPost extends StatelessWidget {
               ).whenComplete(
                 () => context.read<AddNewPostCubit>().restDialog(),
               );
-
               break;
             case DialogsType.error:
               Navigator.pop(context);

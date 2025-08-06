@@ -1,4 +1,5 @@
 import '../model/user_app.dart';
+import 'dart:io';
 
 class AppData {
   UserApp? _userApp;
@@ -6,4 +7,6 @@ class AppData {
   set setUser(UserApp userApp) {
     _userApp = userApp;
   }
+
+  File? tempProfileImage;
 }

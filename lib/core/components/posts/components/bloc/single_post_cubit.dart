@@ -12,7 +12,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../enum/navigat_post.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-
 part 'single_post_state.dart';
 
 class SinglePostCubit extends Cubit<SinglePostState> {

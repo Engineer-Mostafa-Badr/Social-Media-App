@@ -7,7 +7,6 @@ import 'package:equatable/equatable.dart';
 import '../../../enum/navigat_post.dart';
 import 'package:flutter/material.dart';
 import 'package:bloc/bloc.dart';
-
 part 'posts_state.dart';
 
 class PostsCubit extends Cubit<PostsState> {
@@ -24,18 +23,22 @@ class PostsCubit extends Cubit<PostsState> {
     getListPost(formConstructor: true);
   }
   void navigatePost(NavigatePost navigatePost, {PostModel? post}) {
+    if (isClosed) return;
     emit(state.copyWith(navigatePost: navigatePost, postEdit: post));
   }
 
   Future<void> getListPost({bool formConstructor = false}) async {
+    if (isClosed) return;
     if (!formConstructor) {
       emit(state.copyWith(getPostState: DialogsType.loading));
     }
+
     ResultApi result = await firebaseDataBase.getMultiData(
       collection: 'post',
       context: context,
       userId: userApp?.idUser,
     );
+    if (isClosed) return;
     if (result.isError) {
       emit(
         state.copyWith(
@@ -54,25 +57,29 @@ class PostsCubit extends Cubit<PostsState> {
   }
 
   void removePostFromId(String id) {
-    List<PostModel> posts = List.from(state.posts);
+    if (isClosed) return;
+    final posts = List<PostModel>.from(state.posts);
     posts.removeWhere((element) => element.idPost == id);
     emit(state.copyWith(posts: posts));
   }
 
   void addNewPost(PostModel post) {
-    List<PostModel> posts = List.from(state.posts);
+    if (isClosed) return;
+    final posts = List<PostModel>.from(state.posts);
     posts.add(post);
     emit(state.copyWith(posts: posts));
   }
 
   void editPost(PostModel post) {
-    List<PostModel> posts = List.from(state.posts);
+    if (isClosed) return;
+    final posts = List<PostModel>.from(state.posts);
     posts.removeWhere((element) => element.idPost == post.idPost);
     posts.add(post);
     emit(state.copyWith(posts: posts));
   }
 
   void restNavigatorPost() {
+    if (isClosed) return;
     emit(state.copyWith(navigatePost: NavigatePost.inti));
   }
 }
